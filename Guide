@@ -1,4 +1,4 @@
-1. Moduł co 10 min wywołuje crona który pobiera dane pogodowe z wybranej lokalizacji. Zj. 
+1. Moduł co 10 min wywołuje crona który pobiera dane pogodowe z wybranej lokalizacji.
 2. Dane lokalizacji oraz klucz API mozemy ustawić w Admin->Configuration->AlbertGold->Weather (jeżeli nie podamy lokalizacji automatycznie zostaje wybrany lublin). Zdj 2
 3. Grid z archiwum pobranych stanów pogody znajduje sie w Admin->Reports->Weather Archive. Zdj 3v1 + 3v2
 4. By wyświetlic na froncie ostatni wynik wchodzimy na głowna strone projektu -> W górnej cześci strony pojawia nam się napis "Weather" z przekierowaniem, ustawione to zostało na odzielnej podstronie z uwagi na fakt że blok musiał otrzymać status cachable="false" ponieważ co 10 min jest on aktualizowany. Zdj 4v1 + 4v2
