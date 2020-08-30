@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="albertgold_weather" resource="default" engine="innodb" comment="Weather">
+        <column xsi:type="int" name="entity_id" padding="11" unsigned="false" nullable="false" identity="true"
+                comment="Entity ID"/>
+        <column xsi:type="datetime" name="time" nullable="false"
+                default="0" comment="Time"/>
+        <column xsi:type="varchar" name="location" nullable="false"
+                default="0" comment="Location"/>
+        <column xsi:type="int" name="temp" padding="10" unsigned="true" nullable="false" identity="false"
+                comment="Temp"/>
+        <column xsi:type="int" name="temp_feels_like" padding="10" unsigned="true" nullable="false" identity="false"
+                comment="Temp Feels Like"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+</schema>

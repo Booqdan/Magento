@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+<menu>
+    <add id="AlbertGold_Weather::menu" title="Weather Menu" translate="title" module="AlbertGold_Weather"
+         parent="Magento_Reports::report"
+         sortOrder="50" dependsOnModule="AlbertGold_Weather" resource="AlbertGold_Weather::menu" />
+    <add id="AlbertGold_Weather::weather"
+         title="Weather Archive"
+         module="AlbertGold_Weather"
+         sortOrder="20"
+         parent="AlbertGold_Weather::menu"
+         action="weather/weather/index"
+         resource="AlbertGold_Weather::weather"/>
+</menu>
+</config>

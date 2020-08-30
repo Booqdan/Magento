@@ -1,0 +1,33 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \AlbertGold\Weather\Block\Weather $block */
+?>
+<div class="block block-weather">
+    <div class="block-content">
+        <div>
+            <div class="weather-div">
+                <span class="weather-label"><?php echo $block->escapeHtml(__('Location')); ?></span>
+                <span><?php echo $block->getCurrentWeather()->getLocation() ?></span>
+            </div>
+            <div class="weather-div">
+                <span class="weather-label"><?php echo $block->escapeHtml(__('Last Update')); ?></span>
+                <span><?php echo $block->getCurrentWeather()->getTime() ?></span>
+            </div>
+            <div class="weather-div">
+                <span class="weather-label"><?php echo $block->escapeHtml(__('Temperature')); ?></span>
+                <span><?php echo $block->getCurrentWeather()->getTemp() ?>°C</span>
+            </div>
+            <div class="weather-div">
+                <span class="weather-label"><?php echo $block->escapeHtml(__('Temperature Feels Like')); ?></span>
+                <span><?php echo $block->getCurrentWeather()->getTempFeelsLike() ?>°C</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
