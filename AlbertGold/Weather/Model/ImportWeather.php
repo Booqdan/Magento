@@ -113,7 +113,6 @@ class ImportWeather
             $this->weather->setTempFeelsLike($tempFl);
             $this->weather->setTime($time);
             $this->weather->save();
-            die;
         } catch (\Exception $e) {
             $this->logger->critical('Problem with create new weather data: ' . $e->getMessage());
         }
